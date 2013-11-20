@@ -57,21 +57,21 @@ void Lista::imprimirLista()
 }
 
 void Lista::leerLista()
-{   for(Nodo*temp=agregarNodo(new Nodo("inicio",4));
-        temp!=NULL;
-        temp=temp->siguiente)
+{
+       ifstream in ("scores.txt");
+       while(!in.eof()){
+        string nom;
+        int pts;
+        in>>nom;
+        in>>pts;
 
-    {   ifstream in ("scores.txt");
-        while(true)
-        {
-        if(temp->nombre>>in==false)
-        break;
+        agregarNodo(new Nodo(nom,pts));
 
-        if(temp->score>>in==false)
-        break;
-
-        }
     }
+
+
+
+
 }
 
 void Lista::escribirLista()
@@ -80,7 +80,7 @@ void Lista::escribirLista()
         temp!=NULL;
         temp=temp->siguiente)
     {
-    ofstream out("scores.txt", ios::app);
+    ofstream out("scores.txt");
     out<<temp->nombre<<endl;
     out<<temp->score<<endl;
     }

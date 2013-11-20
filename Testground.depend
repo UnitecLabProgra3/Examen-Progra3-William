@@ -140,3 +140,38 @@
 	<iostream>
 	<fstream>
 
+1384843168 source:/home/william/Documents/Code Blocks Projects/Examen2Progra3_William/Nodo.cpp
+	"Nodo.h"
+
+1384843152 /home/william/Documents/Code Blocks Projects/Examen2Progra3_William/Nodo.h
+	<iostream>
+	<string>
+
+1383874438 source:/home/william/Documents/Code Blocks Projects/Examen2Progra3_William/NodoArbol.cpp
+	"NodoArbol.h"
+
+1383874390 /home/william/Documents/Code Blocks Projects/Examen2Progra3_William/NodoArbol.h
+
+1384910826 source:/home/william/Documents/Code Blocks Projects/Examen2Progra3_William/main.cpp
+	<vector>
+	"Nodo.h"
+	"Lista.h"
+	"ArbolBinario.h"
+	<iostream>
+	<fstream>
+
+1384843786 /home/william/Documents/Code Blocks Projects/Examen2Progra3_William/Lista.h
+	<iostream>
+	<fstream>
+	"Nodo.h"
+
+1384897104 /home/william/Documents/Code Blocks Projects/Examen2Progra3_William/ArbolBinario.h
+	<iostream>
+	"NodoArbol.h"
+
+1384923867 source:/home/william/Documents/Code Blocks Projects/Examen2Progra3_William/ArbolBinario.cpp
+	"ArbolBinario.h"
+
+1384924499 source:/home/william/Documents/Code Blocks Projects/Examen2Progra3_William/Lista.cpp
+	"Lista.h"
+
