@@ -67,6 +67,7 @@ void Lista::leerLista()
 
         agregarNodo(new Nodo(nom,pts));
 
+
     }
 
 
@@ -75,15 +76,17 @@ void Lista::leerLista()
 }
 
 void Lista::escribirLista()
-{
+{    ofstream out("scores.txt");
     for(Nodo*temp=inicio;
         temp!=NULL;
         temp=temp->siguiente)
     {
-    ofstream out("scores.txt");
-    out<<temp->nombre<<endl;
-    out<<temp->score<<endl;
+
+    out<<temp->nombre<<" "<<temp->score<<endl;;
     }
+
+
+
 }
 
 Lista::~Lista()
