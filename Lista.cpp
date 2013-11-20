@@ -65,7 +65,12 @@ void Lista::leerLista()
         in>>nom;
         in>>pts;
 
+        if(nom !=" "&& pts!=NULL)
         agregarNodo(new Nodo(nom,pts));
+
+
+        nom=" ";
+        pts =NULL;
 
 
     }
@@ -76,7 +81,7 @@ void Lista::leerLista()
 }
 
 void Lista::escribirLista()
-{    ofstream out("scores.txt");
+{    ofstream out("scores.txt",ios :: app);
     for(Nodo*temp=inicio;
         temp!=NULL;
         temp=temp->siguiente)
